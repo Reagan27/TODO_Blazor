@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\obj\\Debug\\net7.0\\build-gz\\5RVyLsWi.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TODO_Web.styles.css",
+      "PackagePath": "staticwebassets\\TODO_Web.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TODO_Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TODO_Web.props",
+      "PackagePath": "build\\TODO_Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TODO_Web.props",
+      "PackagePath": "buildMultiTargeting\\TODO_Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TODO_Web.props",
+      "PackagePath": "buildTransitive\\TODO_Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

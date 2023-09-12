@@ -1,0 +1,21 @@
+﻿@page "/todolist"
+
+<h3>Add Todo Item</h3>
+
+<form @onsubmit="HandleSubmit">
+    <input type="text" @bind="newItem.Title" placeholder="Enter a new todo item" />
+    <button type="submit">Add</button>
+</form>
+
+@code {
+    private TodoItem newItem = new TodoItem();
+
+    [Parameter]
+    public Action<TodoItem> OnAddTodoItem { get; set; }
+
+    private void HandleSubmit()
+    {
+        OnAddTodoItem?.Invoke(newItem);
+        newItem = new TodoItem(); 
+    }
+}

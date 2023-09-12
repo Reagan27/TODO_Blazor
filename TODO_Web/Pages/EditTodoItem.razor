@@ -1,0 +1,40 @@
+﻿@page "/edit"
+
+@inject TODO_Web.Services.TodoService todoService
+@inject NavigationManager navigationManager
+
+<h3>Edit Todo Item</h3>
+
+@if (editingItem != null)
+{
+    <form @onsubmit="HandleSubmit">
+        <input type="text" @bind="editingItem.Title" />
+        <button type="submit">Save</button>
+    </form>
+}
+else
+{
+    <p>No item selected for editing.</p>
+    <button @onclick="GoBack">Back to Todo List</button>
+}
+
+@code {
+    private TodoItem editingItem;
+
+    protected override void OnInitialized()
+    {
+        var itemId = int.Parse(navigationManager.ToAbsoluteUri(navigationManager.Uri).Segments.Last());
+        editingItem = todoService.GetTodoItems().FirstOrDefault(item => item.Id == itemId);
+    }
+
+    private void HandleSubmit()
+    {
+        
+        navigationManager.NavigateTo("/todolist");
+    }
+
+    private void GoBack()
+    {
+        navigationManager.NavigateTo("/todolist");
+    }
+}

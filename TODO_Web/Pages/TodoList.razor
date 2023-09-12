@@ -1,0 +1,55 @@
+﻿@page "/todolist"
+
+@inject TODO_Web.Services.TodoService todoService
+
+<h3>Todo List</h3>
+
+@if (todoService.GetTodoItems().Count == 0)
+{
+    <p>No todo items found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var item in todoService.GetTodoItems())
+        {
+            <li>
+                <input type="checkbox" @bind="item.IsDone" />
+                @item.Title
+                <button @onclick="() => EditTodoItem(item)">Edit</button>
+                <button @onclick="() => DeleteTodoItem(item)">Delete</button>
+            </li>
+        }
+    </ul>
+}
+
+<h3>Add Todo Item</h3>
+
+<TodoItemForm OnAddTodoItem="AddTodoItem" />
+
+@code {
+    private TodoItem editingItem;
+
+    private void EditTodoItem(TodoItem item)
+    {
+        editingItem = item;
+    }
+
+    private void DeleteTodoItem(TodoItem item)
+    {
+        todoService.GetTodoItems().Remove(item);
+    }
+
+    private void AddTodoItem(TodoItem newItem)
+    {
+        
+        newItem.Id = GenerateUniqueId();
+        todoService.GetTodoItems().Add(newItem);
+    }
+
+    private int GenerateUniqueId()
+    {
+        
+        return todoService.GetTodoItems().Max(i => i.Id) + 1;
+    }
+}
