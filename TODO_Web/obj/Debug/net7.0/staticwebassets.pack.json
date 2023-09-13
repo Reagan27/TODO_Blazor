@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TODO_Web.styles.css",
-      "PackagePath": "staticwebassets\\TODO_Web.styles.css"
-    },
-    {
       "Id": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

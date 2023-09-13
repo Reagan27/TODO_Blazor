@@ -1,0 +1,40 @@
+﻿<div class="col-md-4">
+    <div class="card">
+        <div class="card-header">
+            <h3>@tododto.Title</h3>
+        </div>
+        <div class="card-body">
+            <p>@tododto.Id</p>
+            <p>@tododto.Description</p>
+            <p>@tododto.Priority</p>
+            <p>@tododto.Created</p>
+            <button @onclick="(() => EditTodo(tododto))" class="btn btn-primary">Edit</button>
+            <button @onclick="RemoveTodo" class="btn btn-danger">Delete</button>
+        </div>
+
+
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public TodoDto tododto { get; set; }
+
+
+    [Parameter]
+    public EventCallback<TodoDto> OnEditTodo { get; set; }
+
+    [Parameter]
+    public EventCallback<Guid> OnRemoveTodo { get; set; }
+
+
+    public async Task RemoveTodo()
+    {
+        await OnRemoveTodo.InvokeAsync(tododto.Id);
+    }
+
+    public async Task EditTodo(TodoDto editDto)
+    {
+        await OnEditTodo.InvokeAsync(editDto);
+    }
+}

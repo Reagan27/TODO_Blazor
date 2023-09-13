@@ -20,12 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Pages/EditTodoItem.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFRvZG9JdGVtLnJhem9y
+[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Pages/AddTodo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVG9kby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Pages/TodoForm.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kb0Zvcm0ucmF6b3I=
+[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Pages/SingleTodo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2luZ2xlVG9kby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Pages/TodoList.razor]
@@ -36,14 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Shared/TodoItemForm.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRvZG9JdGVtRm9ybS5yYXpvcg==
+[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Shared/NavMain.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1haW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Lenovo Ideapad S340/source/repos/TODO_Blazor/TODO_Web/Shared/Header.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlYWRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-lu2u6eraat

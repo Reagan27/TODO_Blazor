@@ -1,0 +1,81 @@
+﻿﻿@*add todo form*@
+
+
+<div class="card-header">
+    @if (IsEditing)
+    {
+        <h1>Edit Todo</h1>
+    }
+    else
+    {
+        <h1>Add Todo</h1>
+    }
+    @*<h1>@(IsEditing ? "Edit Todo" : "Add Todo")</h1>*@
+</div>
+
+<div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" @bind="@newtodo.Title" id="title" placeholder="Enter title">
+</div>
+<div class=" form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" @bind="@newtodo.Description" id="description" placeholder="Enter description">
+</div>
+<div class=" form-group">
+    <label for="priority">Priority</label>
+    <select class="form-control" id="priority" @bind="@newtodo.Priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
+</div>
+
+
+@*<div class=" form-group">
+<label for="isDone">Completed</label>
+    <input class="form-check-input mt-0" type="radio" value="id" aria-label="Radio button for following text input">
+</div>*@
+
+<div class=" form-group">
+    <button @onclick="@(IsEditing ? UpdateTodo : AddNewTodo)" class="btn btn-primary">@(IsEditing ? "Update" : "Add")</button>
+
+</div>
+
+@code {
+    public TodoDto newtodo = new TodoDto();
+    [Parameter]
+    public EventCallback<TodoDto> OnAddTodo { get; set; }
+
+    [Parameter]
+    public EventCallback<TodoDto> OnEditTodo { get; set; }
+
+
+    private bool IsEditing = false;
+
+    [Parameter]
+    public TodoDto EditTodoProp
+    {
+        get => newtodo;
+        set
+        {
+            newtodo = value;
+            IsEditing = value != null;
+        }
+    }
+
+    public async Task AddNewTodo()
+    {
+        await OnAddTodo.InvokeAsync(newtodo);
+        newtodo = new TodoDto();
+    }
+
+    public async Task UpdateTodo()
+    {
+        await OnEditTodo.InvokeAsync(newtodo);
+        newtodo = new TodoDto();
+    }
+    protected override void OnInitialized()
+    {
+        IsEditing = false;
+    }
+}

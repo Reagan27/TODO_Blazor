@@ -1,55 +1,75 @@
-﻿@page "/todolist"
+﻿@page "/"
 
-@inject TODO_Web.Services.TodoService todoService
+<div>
+    <div class="card-header">
+        <h1>Todo List</h1>
+    </div>
 
-<h3>Todo List</h3>
-
-@if (todoService.GetTodoItems().Count == 0)
-{
-    <p>No todo items found.</p>
-}
-else
-{
-    <ul>
-        @foreach (var item in todoService.GetTodoItems())
-        {
-            <li>
-                <input type="checkbox" @bind="item.IsDone" />
-                @item.Title
-                <button @onclick="() => EditTodoItem(item)">Edit</button>
-                <button @onclick="() => DeleteTodoItem(item)">Delete</button>
-            </li>
-        }
-    </ul>
-}
-
-<h3>Add Todo Item</h3>
-
-<TodoItemForm OnAddTodoItem="AddTodoItem" />
+    @if (todos.Count == 0)
+    {
+        <p class="">No todos found</p>
+    }
+    else
+    {
+        <div class="card-body">
+            <div class="row">
+                @foreach (var todo in todos)
+                {
+                    <SingleTodo tododto="todo" OnRemoveTodo="RemoveTodo" OnEditTodo="EditTodo" />
+                }
+            </div>
+        </div>
+    }
+    <div>
+    </div>
+    @if (selectedTodo != null)
+    {
+        <AddTodo OnEditTodo="EditTodo" EditTodoProp="selectedTodo" />
+    }
+    else
+    {
+        <AddTodo OnAddTodo="AddTodo" OnEditTodo="EditTodo" />
+    }
+</div>
 
 @code {
-    private TodoItem editingItem;
-
-    private void EditTodoItem(TodoItem item)
+    private List<TodoDto> todos = new List<TodoDto>
     {
-        editingItem = item;
+        new TodoDto
+    {
+        Id = Guid.NewGuid(),
+        Title = "Buy Groceries",
+        Description = "Purchase fruits, vegetables, and milk for the week.",
+        Priority = "Low",
+        IsDone = false,
+        Created = DateTime.Now
+    },
+    new TodoDto
+    {
+        Id = Guid.NewGuid(),
+        Title = "Finish Project Cars",
+        Description = "Complete the final project of the cars manuals for submission.",
+        Priority = "Medium",
+        IsDone = false,
+        Created = DateTime.Now
+    },
+    
+    };
+
+    private TodoDto selectedTodo;
+
+    public void AddTodo(TodoDto todo)
+    {
+        this.todos.Add(todo);
     }
 
-    private void DeleteTodoItem(TodoItem item)
+    public void EditTodo(TodoDto todo)
     {
-        todoService.GetTodoItems().Remove(item);
+        selectedTodo = todo;
     }
 
-    private void AddTodoItem(TodoItem newItem)
+    public void RemoveTodo(Guid id)
     {
-        
-        newItem.Id = GenerateUniqueId();
-        todoService.GetTodoItems().Add(newItem);
-    }
-
-    private int GenerateUniqueId()
-    {
-        
-        return todoService.GetTodoItems().Max(i => i.Id) + 1;
+        this.todos.RemoveAll(t => t.Id == id);
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Uw2F/cLd6qW6CWnC8GcU+Z3k0WUbstk+IHa1LWiMh65tD3IrDCyZ1EpMFLSl7q/8wde61+wCzDBiEWh/gdUa0g==",
+  "dgSpecHash": "iPmlQ82j9hkW1ui2SYBcHYpcq6hvMiHGFnVkb1jWXW70FNM+lEXPY1ur7pXrBtz8wsIm1D40JnYg2nlaGn5/ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TODO_Blazor\\TODO_Web\\TODO_Web.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.10\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.10.nupkg.sha512"
+    "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.11\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.11.nupkg.sha512"
   ],
   "logs": []
 }
